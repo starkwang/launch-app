@@ -1,0 +1,31 @@
+{
+  "name": "launch-app",
+  "version": "0.0.1",
+  "description": "launch your app from web page",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starkwang/launch-app.git"
+  },
+  "author": "starkwang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starkwang/launch-app/issues"
+  },
+  "homepage": "https://github.com/starkwang/launch-app#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "webpack": "^3.10.0"
+  }
+}
