@@ -1,6 +1,6 @@
 import * as platform from './platform';
 import { loadJS, versionCompare } from './utils';
-class LaunchApp {
+export default class LaunchApp {
     constructor (options) {
         this.scheme = options.scheme;
         this.onFailed = options.onFailed.bind(this);
@@ -192,11 +192,3 @@ class LaunchApp {
         }
     }
 }
-
-function init (options) {
-    return new LaunchApp(options);
-}
-
-export default {
-    init
-};

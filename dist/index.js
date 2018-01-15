@@ -187,7 +187,6 @@ var LaunchApp = function () {
                 _this.log('onShow');
                 var timeoutToDownload = _this.timeoutToDownload,
                     hideTime = _this.visibility.hideTime;
-                // 如果超过1500毫秒证明已经打开过app需要把setTimeout清掉，不然快速切回show会在setTimeout前执行
 
                 var showTime = new Date().getTime();
                 if (showTime - hideTime > 1500) {
@@ -249,9 +248,8 @@ var LaunchApp = function () {
                 return iFrame;
             }
 
-            var iFrame;
+            var iFrame = void 0;
             if (platform.isIos()) {
-                // 这里需要设置一个setTimeout，不然启动不了，原因不解
                 setTimeout(function () {
                     window.location.href = scheme;
                 }, 500);
@@ -327,13 +325,7 @@ var LaunchApp = function () {
     return LaunchApp;
 }();
 
-function init(options) {
-    return new LaunchApp(options);
-}
-
-exports.default = {
-    init: init
-};
+exports.default = LaunchApp;
 
 /***/ }),
 /* 1 */
