@@ -1,10 +1,11 @@
 {
   "name": "launch-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "launch your app from web page",
   "main": "dist/index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "prepublishOnly": "webpack"
   },
   "repository": {
     "type": "git",
